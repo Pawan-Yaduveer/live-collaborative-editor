@@ -147,18 +147,18 @@ export default function ChatSidebar({ onApplyEdit, onInsertText, selectedText, h
   ];
 
   return (
-    <div className="w-full bg-gray-50 border-l border-gray-200 flex flex-col h-full">
+    <div className="w-full bg-gradient-to-b from-gray-50 to-gray-100 border-l border-gray-200 flex flex-col h-full shadow-xl">
       {/* Header */}
-      <div className="p-4 border-b border-gray-200">
-        <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-          <Bot size={20} />
+      <div className="p-4 border-b border-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+        <h2 className="text-lg font-bold text-white flex items-center gap-2">
+          <Bot size={20} className="text-blue-200" />
           AI Assistant
         </h2>
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-blue-100">
           Chat with AI or apply edits to your document
         </p>
         {width && (
-          <p className="text-xs text-gray-400 mt-1">
+          <p className="text-xs text-blue-200 mt-1">
             Width: {width}px
           </p>
         )}
@@ -179,10 +179,10 @@ export default function ChatSidebar({ onApplyEdit, onInsertText, selectedText, h
               key={id}
               onClick={() => handleQuickAction(id)}
               disabled={!hasSelection && id !== 'search'}
-              className={`flex items-center gap-2 px-3 py-2 text-sm border rounded-lg transition-colors ${
+              className={`flex items-center gap-2 px-3 py-2 text-sm border rounded-lg transition-all duration-200 transform hover:scale-105 ${
                 hasSelection || id === 'search'
-                  ? 'text-gray-700 bg-white hover:bg-gray-100 border-gray-200'
-                  : 'text-gray-400 bg-gray-50 border-gray-100 cursor-not-allowed'
+                  ? 'text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 border-transparent shadow-md hover:shadow-lg'
+                  : 'text-gray-400 bg-gray-100 border-gray-200 cursor-not-allowed opacity-50'
               }`}
             >
               <Icon size={14} />
@@ -254,19 +254,19 @@ export default function ChatSidebar({ onApplyEdit, onInsertText, selectedText, h
       </div>
 
       {/* Input */}
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-4 border-t border-gray-200 bg-white">
         <form onSubmit={handleSubmit} className="flex gap-2">
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask AI to help with your document..."
-            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
             disabled={isLoading}
           />
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl hover:from-blue-600 hover:to-purple-600 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105"
           >
             <Send size={16} />
           </button>

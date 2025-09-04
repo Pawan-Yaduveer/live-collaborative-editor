@@ -115,7 +115,7 @@ export default function FloatingToolbar({ selection, editor }: FloatingToolbarPr
 
   return (
     <>
-      <div className="fixed z-50 bg-white border border-gray-200 rounded-lg shadow-xl p-3 flex items-center gap-2" 
+      <div className="fixed z-50 bg-white border border-gray-200 rounded-xl shadow-2xl p-4 flex items-center gap-3 backdrop-blur-sm bg-white/95" 
            style={{
              top: '20px',
              left: '50%',
@@ -128,7 +128,7 @@ export default function FloatingToolbar({ selection, editor }: FloatingToolbarPr
             key={id}
             onClick={() => handleAIEdit(action)}
             disabled={isLoading}
-            className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors disabled:opacity-50"
+            className="flex items-center gap-2 px-4 py-2 text-sm text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             title={label}
           >
             <Icon size={16} />

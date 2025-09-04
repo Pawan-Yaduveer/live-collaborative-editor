@@ -79,19 +79,24 @@ export default function Layout() {
       {/* Main Editor Area */}
       <div className="flex-1 flex flex-col">
         {/* Header */}
-        <div className="bg-white border-b border-gray-200 px-6 py-4">
+        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 shadow-lg">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-xl font-semibold text-gray-900">
-                Live Collaborative Editor
+              <h1 className="text-2xl font-bold text-white">
+                ✨ Live Collaborative Editor
               </h1>
-              <p className="text-sm text-gray-600">
+              <p className="text-blue-100 text-sm">
                 AI-powered editing with real-time collaboration
               </p>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span className="text-sm text-gray-600">Online</span>
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-sm text-white font-medium">Online</span>
+              </div>
+              <div className="text-xs text-blue-200">
+                Powered by AI
+              </div>
             </div>
           </div>
         </div>

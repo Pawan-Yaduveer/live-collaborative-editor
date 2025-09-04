@@ -63,7 +63,7 @@ const Editor = forwardRef<EditorRef, EditorProps>(({
     },
     editorProps: {
       attributes: {
-        class: 'prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none min-h-[500px] p-6 max-w-none',
+        class: 'prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none min-h-[500px] p-8 max-w-none bg-gradient-to-br from-gray-50 to-white',
       },
     },
   });
