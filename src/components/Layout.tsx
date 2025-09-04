@@ -83,7 +83,7 @@ export default function Layout() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-bold text-white">
-                ✨ Live Collaborative Editor
+                 Live Collaborative Editor
               </h1>
               <p className="text-blue-100 text-sm">
                 AI-powered editing with real-time collaboration
