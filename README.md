@@ -4,7 +4,7 @@ A modern, AI-powered collaborative editor built with React/Next.js, featuring re
 
 Live Demo
 
-View Live Application: https://live-collaborative-editor-ihxbqtau6.vercel.app
+View Live Application: https://live-collaborative-editor-olive.vercel.app/
 
 Features
 
