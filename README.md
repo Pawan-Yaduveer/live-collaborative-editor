@@ -129,7 +129,7 @@ Author
 
 Pawan Kumar
 - GitHub: @Pawan-Yaduveer
-- Email: editslatest@gmail.com
+- Email: pawankr8107@gmail.com
 
 Assessment Submission
 
