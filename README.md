@@ -104,7 +104,7 @@ Deployment
 
 The application is deployed on Vercel with automatic deployments from GitHub.
 
-Live URL: https://live-collaborative-editor-ihxbqtau6.vercel.app
+Live URL: https://live-collaborative-editor-olive.vercel.app/
 
 Screenshots
 
